@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Pedometer {
-    func startPedometer()
+    func start()
 }

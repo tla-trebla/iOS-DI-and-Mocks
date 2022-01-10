@@ -18,7 +18,7 @@ class PedometerAppTests: XCTestCase {
         
         viewModel.startPedometer()
         
-        XCTAssertEqual(mockPedometer.start, true)
+        XCTAssertEqual(mockPedometer.started, true)
     }
 
 }
