@@ -15,6 +15,6 @@ class MockPedometer: Pedometer {
     private (set) var started = false
     
     func start() {
-        start = true
+        started = true
     }
 }
