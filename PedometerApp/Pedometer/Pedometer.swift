@@ -10,5 +10,6 @@ import Foundation
 protocol Pedometer {
     
     var pedometerAvailable: Bool { get }
+    var permissionDenied: Bool { get }
     func start()
 }
