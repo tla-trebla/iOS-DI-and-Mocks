@@ -15,6 +15,7 @@ enum AppState {
 class PedometerViewModel {
     
     var pedometer: Pedometer
+    var appState: AppState = .notStarted
     
     init(pedometer: Pedometer) {
         self.pedometer = pedometer
