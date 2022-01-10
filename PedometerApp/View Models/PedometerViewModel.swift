@@ -9,5 +9,7 @@ import Foundation
 
 class PedometerViewModel {
     
-    
+    func startPedometer() {
+        
+    }
 }
