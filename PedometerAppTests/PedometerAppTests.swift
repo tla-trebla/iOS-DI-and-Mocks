@@ -12,22 +12,11 @@ class PedometerAppTests: XCTestCase {
 
     func test_StartsPedometer() {
         
-        let now = Date()
-        var data: CMPedometerData?
-        let then = now.addingTimeInterval(-1000)
+        let viewModel = PedometerViewModel()
         
-        let pedometer = CMPedometer()
-        let exp = expectation(description: "Pedometer query returns...")
-        pedometer.queryPedometerData(from: now, to: then) { pedometerData, error in
-            data = pedometerData
-            exp.fulfill()
-        }
+        viewModel.startPedometer()
         
-        wait(for: [exp], timeout: 1.0)
-        XCTAssertNotNil(data)
-        if let steps = data?.numberOfSteps {
-            XCTAssertTrue(steps.intValue > 0)
-        }
+        XCTAssertEqual(viewModel.pedometer.start, true)
     }
 
 }
