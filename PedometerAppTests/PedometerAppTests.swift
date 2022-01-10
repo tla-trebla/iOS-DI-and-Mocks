@@ -25,6 +25,7 @@ class PedometerAppTests: XCTestCase {
         
         let mockPedometer = MockPedometer()
         mockPedometer.pedometerAvailable = true
+        mockPedometer.permissionDenied = true
         
         let viewModel = PedometerViewModel(pedometer: mockPedometer)
         
