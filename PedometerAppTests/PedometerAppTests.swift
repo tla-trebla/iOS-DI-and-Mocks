@@ -7,6 +7,7 @@
 
 import XCTest
 import CoreMotion
+@testable import PedometerApp
 
 class PedometerAppTests: XCTestCase {
 
