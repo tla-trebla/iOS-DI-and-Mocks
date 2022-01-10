@@ -14,6 +14,10 @@ extension CMPedometer: Pedometer {
         return CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable() && CMPedometer.authorizationStatus() != .restricted
     }
     
+    var permissionDenied: Bool {
+        return CMPedometer.authorizationStatus() == .denied
+    }
+    
     func start() {
         
     }
