@@ -22,6 +22,12 @@ class PedometerViewModel {
     }
     
     func startPedometer() {
-        pedometer.startPedometer()
+        
+        guard self.pedometer.pedometerAvailable else {
+            self.appState = .notStarted
+            return
+        }
+        
+        pedometer.start()
     }
 }
