@@ -13,11 +13,12 @@ class PedometerAppTests: XCTestCase {
 
     func test_StartsPedometer() {
         
-        let viewModel = PedometerViewModel()
+        let mockPedometer = MockPedometer()
+        let viewModel = PedometerViewModel(pedometer: mockPedometer)
         
         viewModel.startPedometer()
         
-        XCTAssertEqual(viewModel.pedometer.start, true)
+        XCTAssertEqual(mockPedometer.start, true)
     }
 
 }
