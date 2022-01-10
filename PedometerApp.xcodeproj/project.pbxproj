@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E91C186278C61730029A545 /* PedometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91C185278C61730029A545 /* PedometerViewModel.swift */; };
+		5E91C189278C61F50029A545 /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91C188278C61F50029A545 /* Pedometer.swift */; };
 		5EF24B59278C325500144B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF24B58278C325500144B60 /* AppDelegate.swift */; };
 		5EF24B5B278C325500144B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF24B5A278C325500144B60 /* SceneDelegate.swift */; };
 		5EF24B5D278C325500144B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF24B5C278C325500144B60 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		5E91C185278C61730029A545 /* PedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewModel.swift; sourceTree = "<group>"; };
+		5E91C188278C61F50029A545 /* Pedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
 		5EF24B55278C325500144B60 /* PedometerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedometerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF24B58278C325500144B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF24B5A278C325500144B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		5E91C187278C61EB0029A545 /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				5E91C188278C61F50029A545 /* Pedometer.swift */,
+			);
+			path = Pedometer;
+			sourceTree = "<group>";
+		};
 		5EF24B4C278C325500144B60 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		5EF24B57278C325500144B60 /* PedometerApp */ = {
 			isa = PBXGroup;
 			children = (
+				5E91C187278C61EB0029A545 /* Pedometer */,
 				5E91C184278C61650029A545 /* View Models */,
 				5EF24B58278C325500144B60 /* AppDelegate.swift */,
 				5EF24B5A278C325500144B60 /* SceneDelegate.swift */,
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E91C189278C61F50029A545 /* Pedometer.swift in Sources */,
 				5E91C186278C61730029A545 /* PedometerViewModel.swift in Sources */,
 				5EF24B5D278C325500144B60 /* ViewController.swift in Sources */,
 				5EF24B59278C325500144B60 /* AppDelegate.swift in Sources */,
