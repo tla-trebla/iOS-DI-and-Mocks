@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum AppState {
+    case notStarted
+    case inProgress
+}
+
 class PedometerViewModel {
     
     var pedometer: Pedometer
