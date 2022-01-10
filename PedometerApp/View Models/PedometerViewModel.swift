@@ -9,6 +9,12 @@ import Foundation
 
 class PedometerViewModel {
     
+    var pedometer: Pedometer
+    
+    init(pedometer: Pedometer) {
+        self.pedometer = pedometer
+    }
+    
     func startPedometer() {
         
     }
