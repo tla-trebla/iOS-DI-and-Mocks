@@ -16,6 +16,6 @@ class PedometerViewModel {
     }
     
     func startPedometer() {
-        
+        pedometer.startPedometer()
     }
 }
